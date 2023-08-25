@@ -17,8 +17,8 @@ from loss.KL_Loss import compute_kl_loss
 def get_args():
     parser = argparse.ArgumentParser(description="Script to launch jigsaw training",
                                      formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument("--target", default=1, type=int, help="Target")
-    parser.add_argument("--device", type=int, default=3, help="GPU num")
+    parser.add_argument("--target", default=0, type=int, help="Target")
+    parser.add_argument("--device", type=int, default=0, help="GPU num")
     parser.add_argument("--time", default=0, type=int, help="train time")
 
     parser.add_argument("--eval", default=0, type=int, help="Eval trained models")
