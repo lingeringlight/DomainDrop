@@ -34,13 +34,12 @@ Or run the `train.sh` directly.
 ## Evaluation
 
 
-
 To evaluate the performance of the models, you can download the models trained  on PACS as below:
 
 Target domain  | Photo | Art | Cartoon | Sketch |
 :----:  | :----: | :----: | :----: | :----: |
 Acc(%) | 96.71 | 84.91 | 81.19 | 84.32 |
-models | [download](https://drive.google.com/drive/folders/1N63V8HxLXRl94GZgllQHTrxWrqH2-GDl?usp=drive_link) | [download](https://drive.google.com/drive/folders/1zA9smbTRExm6FSu5WpfI0tmx93uonjuk?usp=drive_link) | [download](https://drive.google.com/drive/folders/1jJW4q-aUVsNcUeiE8wKbv0zuzK5f3aJA?usp=drive_link) | [download](https://drive.google.com/drive/folders/1x-33N1mtAJP08sT5dqZX53Y8B_8_Vify?usp=drive_link) |
+models | [download](https://drive.google.com/drive/folders/1N63V8HxLXRl94GZgllQHTrxWrqH2-GDl?usp=sharing) | [download](https://drive.google.com/drive/folders/1zA9smbTRExm6FSu5WpfI0tmx93uonjuk?usp=sharing) | [download](https://drive.google.com/drive/folders/1jJW4q-aUVsNcUeiE8wKbv0zuzK5f3aJA?usp=sharing) | [download](https://drive.google.com/drive/folders/1x-33N1mtAJP08sT5dqZX53Y8B_8_Vify?usp=sharing) |
 
 
 Please set the `--eval = 1` and `--eval_model_path` as the saved path of the downloaded models.  *e.g.*,  `/trained/model/path/photo/model.pt`. Then you can simple run:
