@@ -17,6 +17,10 @@ def mask_selection(scores, percent, wrs_flag):
         mask_filters = torch.where(scores > threshold_expand, torch.tensor(1.).cuda(), torch.tensor(0.).cuda())
     else:
         # add random modules
+        score_max = scores.max(dim=1, keepdim=True)[0]
+        score_min = scores.min(dim=1, keepdim=True)[0]
+        scores = (scores - score_min) / (score_max - score_min)
+        
         r = torch.rand(scores.shape).cuda()  # BxC
         key = r.pow(1. / scores)
         threshold = torch.sort(key, dim=1, descending=True)[0][:, drop_num]
