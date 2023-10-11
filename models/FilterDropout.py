@@ -35,7 +35,7 @@ def filter_dropout_channel(scores, percent, wrs_flag):
     # scores: BxCxHxW
     batch_size, channel_num, H, W = scores.shape[0], scores.shape[1], scores.shape[2], scores.shape[3]
     channel_scores = nn.AdaptiveAvgPool2d((1, 1))(scores).view(batch_size, channel_num)
-    channel_scores = channel_scores / channel_scores.sum(dim=1, keepdim=True)
+    # channel_scores = channel_scores / channel_scores.sum(dim=1, keepdim=True)
     mask = mask_selection(channel_scores, percent, wrs_flag)   # BxC
     mask_filters = mask.view(batch_size, channel_num, 1, 1)
     return mask_filters
