@@ -362,8 +362,8 @@ class Trainer:
         val_res = self.results["val"]
         test_res = self.results["test"]
         idx_best = val_res.argmax()
-        line = "Best val %g, corresponding test %g - best test: %g, best epoch: %g" % (
-        val_res.max(), test_res[idx_best], test_res.max(), idx_best)
+        line = "Best val %g, corresponding test %g, best val epoch: %g - best test: %g" % (
+        val_res.max(), test_res[idx_best], idx_best, test_res.max())
         print(line)
         with open(self.base_result_path+"test.txt", "a") as f:
             f.write(line+"\n")
