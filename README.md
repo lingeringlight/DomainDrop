@@ -38,7 +38,7 @@ To evaluate the performance of the models, you can download the models trained  
 
 Target domain  | Photo | Art | Cartoon | Sketch |
 :----:  | :----: | :----: | :----: | :----: |
-Acc(%) | 96.71 | 84.91 | 81.19 | 84.32 |
+Acc(%) | 96.71 | 84.91 | 80.80 | 84.32 |
 models | [download](https://drive.google.com/drive/folders/1N63V8HxLXRl94GZgllQHTrxWrqH2-GDl?usp=sharing) | [download](https://drive.google.com/drive/folders/1zA9smbTRExm6FSu5WpfI0tmx93uonjuk?usp=sharing) | [download](https://drive.google.com/drive/folders/1jJW4q-aUVsNcUeiE8wKbv0zuzK5f3aJA?usp=sharing) | [download](https://drive.google.com/drive/folders/1x-33N1mtAJP08sT5dqZX53Y8B_8_Vify?usp=sharing) |
 
 
